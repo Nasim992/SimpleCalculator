@@ -1,0 +1,58 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #c0e6eb,#04e8fd);
+}
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top:100px;
+    height: 70vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(100px,auto) repeat(5,100px);
+
+}
+.calculator-grid button{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.712);
+    border: 2px solid white;
+    font-size: 2rem;
+    outline: none;
+}
+.calculator-grid button:hover{
+    background-color: rgba(5, 219, 219, 0.9);
+    color:white;
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    background:linear-gradient(180deg,rgb(15, 28, 216),aqua);
+    padding: 10px;
+    color: white;
+
+}
+.output .previous-operand{
+    color: rgb(255, 255, 255,.75);
+    font-size: 1.5rem;
+    
+}
+.output .current-operand{
+    color:white;
+    font-size: 2.5rem;
+    
+}
